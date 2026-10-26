@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Event Management Kanban Board</title>
+
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            background: #f1f5f9;
+            margin: 0;
+            padding: 20px;
+        }
+
+        h1 {
+            text-align: center;
+            color: #1e3a8a;
+        }
+
+        .board {
+            display: flex;
+            gap: 20px;
+            margin-top: 30px;
+        }
+
+        .column {
+            background: #dbeafe;
+            padding: 15px;
+            border-radius: 10px;
+            flex: 1;
+            min-height: 250px;
+        }
+
+        .column h2 {
+            text-align: center;
+            color: #1e40af;
+        }
+
+        .task {
+            background: white;
+            padding: 15px;
+            margin: 12px 0;
+            border-radius: 8px;
+            box-shadow: 0 2px 5px #00000015;
+        }
+
+        @media (max-width: 700px) {
+            .board {
+                flex-direction: column;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Event Management Kanban Board</h1>
+
+    <div class="board">
+        <div class="column">
+            <h2>Backlog</h2>
+            <div class="task">Volunteer Allocation</div>
+            <div class="task">Certificate Generation</div>
+        </div>
+
+        <div class="column">
+            <h2>In Progress</h2>
+            <div class="task">Database Design</div>
+            <div class="task">Website Development</div>
+        </div>
+
+        <div class="column">
+            <h2>Completed</h2>
+            <div class="task">Event Planning</div>
+            <div class="task">Team Formation</div>
+        </div>
+    </div>
+</body>
+</html>
